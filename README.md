@@ -1,6 +1,6 @@
 # p4schlimes
 
-Ryan, Noah, Carter, Brayden, Max
+Ryan, Noah, Carter, Brayden, and Max
 
 [Canvas Page](https://poway.instructure.com/courses/91261)
 
