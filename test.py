@@ -18,4 +18,4 @@ def get_price(stock):
     price = (result['05. price'])
 
     return price
-
+ 
