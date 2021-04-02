@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Main</title>
-</head>
-<style>
-    body {
-        background-image: url('https://media.discordapp.net/attachments/750759468542853222/821591493050761236/unknown.png');
-    }
-</style>
-<body>
-<h1 style="text-align:center">Welcome to p4schlimes Website</h1>
-<h3 style="text-align:center">Tri 3 AP CS P Project</h3>
-<h2>Navigation Bar</h2>
+<title>Welcome to P4 Schlimes Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<ul>
-    <li><a href="/">Home Page</a></li>
-    <li><a href="/reactiontest">Reaction Test</a></li>
-    <li><a href="/bio">About Us</a></li>
-</ul>
+<style>
+    * {
+      box-sizing: border-box;
+      width: 80%;
+      padding: 20px;
+    }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #2A11A5;
+  padding: px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #2A11A5;
+  background-image: url('https://media.discordapp.net/attachments/750759468542853222/821591493050761236/unknown.png');
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #2A11A5;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+body {
+        background-image: url('https://cdn.discordapp.com/attachments/762764809338748938/826294611483688980/gmetothemoonlol.jpg');
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Schtock Market Simulator</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="/">Home_Page</a></li>
+        <li><a href="/reactiontest">Reaction_Test</a></li>
+        <li><a href="/bio">About_Us</a></li>
+        <li><a href="/leaderboard">Leaderboard</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Enter your Login Information and Start Trading</h1>
+    <p>(put inputs for login username and password here)</p>
+  </article>
+</section>
+
+<footer>
+  <p>P4 Schlimes - Made by Carter, Noah, Ryan, Brayden, but mostly Max</p>
+</footer>
+
 </body>
 </html>
