@@ -16,7 +16,7 @@ Schtocks is a stock website where you can trade and buy stocks, and compete to b
 
 -Backlog ticket: https://github.com/noahahooja/p4schlimes/projects/1#card-57743031
 
--Github commit towards minilab:
+-Github commit towards minilab: https://github.com/noahahooja/p4schlimes/blob/main/ryan.lab
 
 ## Brayden
 
