@@ -8,7 +8,7 @@ Schtocks is a stock website where you can trade and buy stocks, and compete to b
 
 # [Runtime link](http://76.167.172.90:25565/)
 
-# Individual Work Week of 3/26
+# Individual Work 
 
 ## Ryan
 
@@ -28,7 +28,7 @@ Schtocks is a stock website where you can trade and buy stocks, and compete to b
 
 -Github commit towards ticket: My ticket was get the pi up and running so check the [runtime link](http://76.167.172.90:25565/) 
 
--Github commit towards minilab:
+-Github commit towards minilab: https://github.com/noahahooja/p4schlimes/blob/9e32b8d0b92eb56ffe569e4595648f53c2660c2c/braydenbp/mini_lab_w/mini_lab_4.2.21.py#L2
 
 ## Carter
 
