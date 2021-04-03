@@ -19,7 +19,7 @@ class Brands:
         self._dictID = 0
         # Duration timeElapsed;
         # Instant start = Instant.now();  // time capture -- start
-        self.book_series()
+        self.brand_series()
         # Instant end = Instant.now();    // time capture -- end
         # this.timeElapsed = Duration.between(start, end);
 
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     '''Value for testing'''
     a = 2
     '''Constructor of Class object'''
-    brandrecs = Player(a/a)
+    brandrecs = brand(a/a)
     print(f"Here are some brand types = {brandrecs.list}")
 
 #for i in range(a):
