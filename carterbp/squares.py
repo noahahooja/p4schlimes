@@ -48,7 +48,7 @@ class Squares:
 # Tester Code
 if __name__ == "__main__":
     '''Value for testing'''
-    n = 10
+    n = 18
     '''Constructor of Class object'''
     squares = Squares(n)
 

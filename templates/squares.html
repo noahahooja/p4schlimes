@@ -36,21 +36,20 @@
         <!-- Sequence -->
         <div class="col-12" style="text-align: left; ">
             <!-- Series -->
-            <h3>Fibonacci build up for series: {{squares.series}} number: {{squares.number}}</h3>
+            <h3>Build of Squares series: {{squares.series}} number: {{squares.number}}</h3>
             <div class="overflow-auto" style="height: 200px">
                 {% for i in range(squares.series) %}
-                    <h5>{{squares.get_sequence(i)}}</h5>
+                <h5>{{squares.get_sequence(i)}}</h5>
                 {% endfor %}
             </div>
-            <!-- Code -->
-            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnighthawkcoders%2Fnighthawk_csp%2Fblob%2Fmaster%2Falgorithm%2Ffibonacci.py&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>        </div>
+        </div>
     </div>
 
 </div>
 </div>
 <style>
     table, td, th {
-        border: 1px solid var(--dblue);
+        border: 1px solid;
     }
     td, th {
         text-align:left;
