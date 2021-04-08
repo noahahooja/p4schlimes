@@ -48,7 +48,7 @@ class Fibonacci:
         return self._dict[nth]
 
 
-# Tester Code
+
 if __name__ == "__main__":
     '''Value for testing'''
     n = 20
