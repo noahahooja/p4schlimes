@@ -1,12 +1,12 @@
 from flask import Blueprint, render_template, request
-from ryanbp.ryanml import
+from ryanbp.minilab import Minilab
 
-square_bp = Blueprint('squarebp', __name__,
+minilab_bp = Blueprint('ryan.bp', __name__,
                       template_folder='templates',)
 
 
-@square_bp.route('/squares', methods=["GET", "POST"])
-def square():
+@minilab_bp.route('/minilab', methods=["GET", "POST"])
+def minilab():
     if request.form:
-        return render_template("squares.html", squares=Squares(int(request.form.get("series"))))
-    return render_template("squares.html", squares=Squares(2))
+        return render_template("minilab.html", minilab=Minilab(int(request.form.get("series"))))
+    return render_template("minilab.html", minilab=Minilab(2))

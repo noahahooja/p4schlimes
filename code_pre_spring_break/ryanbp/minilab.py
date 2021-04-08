@@ -62,7 +62,7 @@ if __name__ == "__main__":
     '''Value for testing'''
     a = 2
     '''Constructor of Class object'''
-    brandrecs = brand(a/a)
+    brandrecs = brands(a/a)
     print(f"Here are some brand types = {brandrecs.list}")
 
 #for i in range(a):
