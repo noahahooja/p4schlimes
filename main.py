@@ -26,5 +26,9 @@ def livechat():
 def squa():
     return render_template("squares.html")
 
+@app.route('/noahminilab')
+def noahml():
+    return render_template("noahminilab.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port='5000', host='127.0.0.1')

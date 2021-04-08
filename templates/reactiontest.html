@@ -145,7 +145,7 @@
       g-animation {
             0% {
                 bacbody{
-        background-image: url('cool-backgrond.jpg');
+        background-image: url('cool-background.jpg');
         background-repeat: no-repeat;
         animation: bg-animation 10s infinite;
 
@@ -190,12 +190,12 @@
 
         <p class="timeBox"> How Quick: <span id="time">0</span>s</p>
 
-        <p class="diffVary" id="easy"> sleepy Max </p>
 
-        <p class="diffVary" id="medium"> normal Max </p>
+        <p class="diffVary" id="easy"> Easy </p>
 
-        <p class="diffVary" id="hard"> coked up Max </p>
+        <p class="diffVary" id="medium"> Medium </p>
 
+        <p class="diffVary" id="hard"> Fast </p>
 
 
 
@@ -227,7 +227,7 @@
 
 <script type="text/javascript">
 
-   function getRandomColor(){
+function getRandomColor(){
    var letters="0123456789ABCDEF".split('');
    var color="#";
    for (var i=0; i < 6; i++){
