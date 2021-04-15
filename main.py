@@ -10,6 +10,10 @@ def main():
 def reactiontest():
     return render_template("reactiontest.html")
 
+@app.route('/magic')
+def magic():
+    return render_template("magic.html")
+
 @app.route('/bio')
 def aboutus():
     return render_template("aboutus.html")
@@ -32,3 +36,4 @@ def noahml():
 
 if __name__ == "__main__":
     app.run(debug=True, port='5000', host='127.0.0.1')
+
