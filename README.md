@@ -30,7 +30,7 @@ Schtocks is a stock website where you can trade and buy stocks, and compete to b
 
 ## Carter
 
--In progress ticket:
+-In progress ticket:https://github.com/noahahooja/p4schlimes/projects/1#card-58410353
 
 -Backlog ticket:
 
