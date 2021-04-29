@@ -1,5 +1,12 @@
 
-  
+
+print ("input 3 integers you want to see in order")
+
+a = int(input())
+b = int(input())
+c = int(input())
+arr = [a, b, c]
+
 def BraydenBubbleSort(arr):
     n = len(arr)
   
@@ -11,9 +18,6 @@ def BraydenBubbleSort(arr):
   
             if arr[j] > arr[j+1] :
                 arr[j], arr[j+1] = arr[j+1], arr[j]
-  
-
-arr = [32, 49, 328, 92, 23, 8, 29]
   
 BraydenBubbleSort(arr)
   
