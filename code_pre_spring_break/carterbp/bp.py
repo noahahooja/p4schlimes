@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from carterbp.squares import Squares
+from code_pre_spring_break.carterbp.squares import Squares
 
 square_bp = Blueprint('squarebp', __name__,
                       template_folder='templates',)
