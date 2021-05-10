@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 from Bubble_Sort.Brayden_Bubble_Sort.braydenbs import BraydenBubbleSort1
 
+from flask import Flask, render_template, request
+from Bubble_Sort.ryanbubble.ryanbs import RyanBubbleSort1
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -49,9 +52,19 @@ def braydenbubblesort():
         all_list.append(int(request.form.get('number3')))
         return render_template("braydenbubsort.html", testing=BraydenBubbleSort1(all_list))  
 
-    return render_template("braydenbubsort.html")  
-      
+    return render_template("braydenbubsort.html")
 
+@app.route('/ryanbubsort', methods=["GET", "POST"])
+def ryanbubblesort():
+    if request.form:
+        all_list = []
+
+        all_list.append(int(request.form.get('number1')))
+        all_list.append(int(request.form.get('number2')))
+        all_list.append(int(request.form.get('number3')))
+        return render_template("ryanbubsort.html", testing=RyanBubbleSort1(all_list))
+
+    return render_template("ryanbubsort.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port='5000', host='127.0.0.1')
