@@ -8,9 +8,9 @@ Schtocks is a stock website where you can trade and buy stocks, and compete to b
 
 # [Runtime link](http://76.167.172.90/)
 
-# Individual Work 
+# Individual Work
 
-## Ryan 2
+## Ryan
 
 -In progress ticket: https://github.com/noahahooja/p4schlimes/projects/1#card-57803216 
 
