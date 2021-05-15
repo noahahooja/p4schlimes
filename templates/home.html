@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+{{ super() }}
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Header -->
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="/static/img/download5.jpg" alt="stockmarket" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Stratton</b></span> <span class="w3-hide-small w3-text-white">Stocks</span></h1>
+    </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- Project Section -->
+    <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container">
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container">
+                <img src="/static/img/oakmont.jpg" alt="oakmont" style="width:100%">
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('collegeboard') }}">
+                        <span> <button type = "submit" name = "learn" value = "myimage">
+                    <img src="/static/img/unnamed.jpg" alt="money" style="width:100%">
+                </button> </span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+        <p>We are a group of High School students working on a mock stock website in preparation for the AP Computer Science Principles test. With the help of our teacher Mr. Mortenson we have learned a lot and this is what we have been working on.
+        </p>
+    </div>
+
+    <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/img/nathan.JPG" alt="Nathan" style="width:100%">
+            <h3>Nathan Lee</h3>
+            <p class="w3-opacity">Senior Nighthawk Coder</p>
+            <p>My name is Nathan Lee and I am currently a 12th grader at Del Norte High School. I have been working on the front end of our project and it has been a blast learning how to make a website with my group.</p>
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://github.com/nathanlee27';">
+                GitHub
+            </button></p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/img/bradley.jpg" alt="Bradley" style="width:100%">
+            <h3>Bradley Bartelt</h3>
+            <p class="w3-opacity">Junior Nighthawk Coder</p>
+            <p>I'm an 11th grader and I'm having my first experiences with coding. I have been doing a lot of work with hosting the website and port forwarding, and I'm learning more every day.</p>
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://github.com/BradleyBartelt';">
+                GitHub
+            </button></p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/img/carter.jpg" alt="Mike" style="width:100%">
+            <h3>Carter</h3>
+            <p class="w3-opacity">Junior Nighthawk Coder</p>
+            <p>Hi I'm Carter! I'm a Junior that has been working a lot with out database and login system. I'm excited to continue to grow in this area since I see many useful skills that will stay with me throughout my life.</p>
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://github.com/carterquartararo';">
+                GitHub
+            </button></p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/img/dane.jpg" alt="Dane" style="width:100%">
+            <h3>Dane</h3>
+            <p class="w3-opacity">Junior Nighthawk Coder</p>
+            <p>Hi, my name is Dane! Im in 11th grade and have been having fun coding in Mr, Mortensens class. Im excited to be learning new skills which will help me out in the future</p>
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://github.com/D1935827V';">
+                GitHub
+            </button></p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-32" id="web">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Stocks WebApi</h3>
+        <p>This is our WebApi which you can put in a stock symbol and it will put out the price of the stock.
+        </p>
+    </div>
+
+
+
+    <form method="POST" ID="form" action="/">
+
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+
+        <td><input type="text" name="symbol"/></td>
+        <p style="font-size:1.5vw; color:#FFFFFF;">Type in stock symbol above ^</p>
+        <p style="font-size:2vw;"><td><input type="submit" value="click here to search = {{price}}" /> </td>
+    </form>
+
+    <!-- End page content -->
+</div>
+
+</body>
+</html>
+
+{% endblock %}
+
+
+
+

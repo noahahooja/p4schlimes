@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+{{ super() }}
+<form method="POST"  action="/sell">
+    <h2>Chat</h2>
+    <!-- IMPORTANT - GENERATES CSRF TOKEN -->
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+    <div>
+        <label for="stock">Stock Symbol:</label>
+        <input id="stock" name="stock" required type="text" placeholder="stock symbol" value="">
+        <label for="amount">Number of Shares:</label>
+        <input id="amount" name="amount" required type="number" placeholder="number of shares" value=0>
+    </div>
+    <center><button type="submit">Submit</button></center>
+</form>.
+
+{% endblock %}

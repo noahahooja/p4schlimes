@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<body>
+<!-- Header -->
+<article>
+    <header>
+        <h1>Extra College Board Projects</h1>
+    </header>
+</article>
+{% for data in datalist: %}
+{% set embed = data["embed"] %}
+{% set greeting = data["greeting"] %}
+{% set name = data["name"] %}
+{% set doa = data["doa"] %}
+{% set job = data["job"] %}
+{% set gist = data["gist"] %}
+<ol>
+    <H1>"<span style='color:midnightblue;'>{{name}}</span>"</H1>
+    <li>"<span style='color:midnightblue;'>{{doa}}</span>"</li>
+    <div class="embed-responsive embed-responsive-4by3">
+        <iframe frameborder="0" style="width:100%;height:700px;" src="{{embed}}"></iframe>
+    </div>
+</ol>
+{% endfor %}
+</body>
+{% endblock %}
+
