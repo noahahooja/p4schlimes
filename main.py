@@ -24,6 +24,18 @@ csrf = CSRFProtect(app)
 csrf.init_app(app)
 login_manager.login_view = 'login'
 
+@app.route('/email', methods = ['POST'])
+def email():
+    email = request.form['email']
+    email_text = 'Subject: {}\n\n{}'.format("Stock Futures are little changed after muted start to June!')
+    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    server.ehlo()
+    server.login('schlimesp4@gmail.com', 'ryanmgds')
+    server.sendmail('schlimesp4@gmail.com', email, email_text)
+    server.close()
+    print ("email sent to:", email)
+    return render_template("home.html")
+
 @app.route('/')
 def main():
     return render_template("main.html")
