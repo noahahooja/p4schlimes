@@ -60,6 +60,10 @@ def noahml():
 def quiz():
     return render_template("quiz.html")
 
+@app.route('/userreview')
+def userreview():
+    return render_template("userreview.html")
+
 @app.route('/braydenbubsort', methods=["GET", "POST"])
 def braydenbubblesort():
     if request.form:
