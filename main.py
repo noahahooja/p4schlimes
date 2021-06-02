@@ -1,5 +1,6 @@
 from Bubble_Sort.Brayden_Bubble_Sort.braydenbs import BraydenBubbleSort1
 import data
+import smtplib
 from flask import Flask, render_template, redirect, url_for, request
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from flask_sqlalchemy import SQLAlchemy
@@ -23,6 +24,18 @@ login_manager.init_app(app)
 csrf = CSRFProtect(app)
 csrf.init_app(app)
 login_manager.login_view = 'login'
+
+@app.route('/email', methods = ['POST'])
+def email():
+    email = request.form['email']
+    email_text = 'Subject: {}\n\n{}'.format("Stock News", 'Stock Futures are little changed after muted start to June!')
+    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    server.ehlo()
+    server.login('schlimesp4@gmail.com', 'ryanmgds')
+    server.sendmail('schlimesp4@gmail.com', email, email_text)
+    server.close()
+    print ("email sent to:", email)
+    return render_template("main.html")
 
 @app.route('/')
 def main():
@@ -59,6 +72,10 @@ def noahml():
 @app.route('/quiz')
 def quiz():
     return render_template("quiz.html")
+
+@app.route('/userreview')
+def userreview():
+    return render_template("userreview.html")
 
 @app.route('/braydenbubsort', methods=["GET", "POST"])
 def braydenbubblesort():
