@@ -34,7 +34,7 @@ def email():
     server.sendmail('schlimesp4@gmail.com', email, email_text)
     server.close()
     print ("email sent to:", email)
-    return render_template("home.html")
+    return render_template("main.html")
 
 @app.route('/')
 def main():
