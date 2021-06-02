@@ -27,11 +27,11 @@ login_manager.login_view = 'login'
 @app.route('/email', methods = ['POST'])
 def email():
     email = request.form['email']
-    email_text = 'Subject: {}\n\n{}'.format("United States Data", 'United States Total Cases 24,983,892; Total Deaths 2,080,972; Current Active Cases 25,361,201 ')
+    email_text = 'Subject: {}\n\n{}'.format("Stock Futures are little changed after muted start to June!')
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
-    server.login('wildcatsp4@gmail.com', 'MrMadman33')
-    server.sendmail('wildcatsp4@gmail.com', email, email_text)
+    server.login('schlimesp4@gmail.com', 'ryanmgds')
+    server.sendmail('schlimesp4@gmail.com', email, email_text)
     server.close()
     print ("email sent to:", email)
     return render_template("home.html")
