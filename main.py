@@ -65,6 +65,10 @@ def livechat():
 def squa():
     return render_template("squares.html")
 
+@app.route('/Market_Data_Widget')
+def MDW():
+    return render_template("Market_Data_Widget.html")
+
 @app.route('/noahminilab')
 def noahml():
     return render_template("noahminilab.html")
@@ -100,6 +104,18 @@ def ryanbubblesort():
         return render_template("ryanbubsort.html", testing=RyanBubbleSort1(all_list))
 
     return render_template("ryanbubsort.html")
+
+@app.route('/whatstocks', methods=["GET", "POST"])
+def whatstocks():
+    if request.form:
+        all_list = []
+
+        all_list.append(int(request.form.get('number1')))
+        all_list.append(int(request.form.get('number2')))
+        all_list.append(int(request.form.get('number3')))
+        return render_template("whatstocks.html", testing=whatstocks(all_list))
+
+    return render_template("whatstocks.html")
 
 class User(UserMixin, db.Model):  # Creates columns inside of the database
     id = db.Column(db.Integer, primary_key=True)
