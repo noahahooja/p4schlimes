@@ -28,10 +28,10 @@ Big Idea #5. Consider the impact of your system in things like Night at the Muse
 # [Runtime link](http://76.167.172.90/)
 
 # Creators
-Brayden
-half afk Ryan
-Mr "i will do the login no problem" Carter
-living in a different world Max
-committing to the wrong repo Noah
+*Brayden
+*half afk Ryan
+*Mr "i will do the login no problem" Carter
+*living in a different world Max
+*committing to the wrong repo Noah
 
 
