@@ -1,6 +1,8 @@
 # How its made
 We used databases and WEB API's. Our general theme was trading stocks and we accomplished this by having a login page that was made with databases and API's. We also incorporated another API when we have current stock prices in the html. We also have a database that stores all login credentials so that people can login and do the stock simulator. We have another API and database incorporation on the page where you are able to see the current scores and see other peoples scores. 
 
+# Youtube Commercial 
+https://youtu.be/WSFM7zGL6Gw 
 
 # Schtock by p4schlimes
 
