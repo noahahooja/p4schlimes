@@ -1,3 +1,7 @@
+# How its made
+We used databases and WEB API's. Our general theme was trading stocks and we accomplished this by having a login page that was made with databases and API's. We also incorporated another API when we have current stock prices in the html. We also have a database that stores all login credentials so that people can login and do the stock simulator. We have another API and database incorporation on the page where you are able to see the current scores and see other peoples scores. 
+
+
 # Schtock by p4schlimes
 
 Schtocks is a stock website where you can trade and buy stocks, and compete to be the richest person in the world! In our stock website where you can trade and buy stocks, and compete to be the richest person in the world! On our website, you will find a variety of companies and businesses to choose from as you start investing in them. Through our leaderboard page, you will be able to record some of your best investments and see how you are doing amongst others. You will also be able to ask us questions in real time with our live chat! So if you have any questions, go to the live chat tab. Lastly, we have a fun quiz for everybody to take that is related to stocks. Users will be able to see how many they got right and the questions will be updated on a weekly basis. Have fun and start investing!
@@ -24,4 +28,4 @@ Big Idea #5. Consider the impact of your system in things like Night at the Muse
 # [Runtime link](http://76.167.172.90/)
 
 # Creators
-Ryan, Noah, Carter, Brayden, and Max
+Ryan, Noah, Carter, Brayden, and kinda Max
