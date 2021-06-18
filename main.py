@@ -291,6 +291,11 @@ def logout():
     logout_user()
     return redirect(url_for('home'))
 
+@app.route('/individual')
+@login_required
+def individual():
+    logout_user()
+    return redirect(url_for('individual'))
 
 @app.route('/about')
 def about():
